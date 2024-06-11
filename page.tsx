@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './style.css'; // Подключаем стили
+import { Telegraf } from 'telegraf';
+
+const bot = new Telegraf('6723639762:AAHtebpcMg7vrYWAPWGIllBX2-IrCVmMeQI');
 
 const App: React.FC = () => {
   const [score, setScore] = useState<number>(0);
